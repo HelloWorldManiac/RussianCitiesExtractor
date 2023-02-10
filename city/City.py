@@ -7,7 +7,7 @@ import pickle
 
 class CityExtractor:
     def __init__(self):
-        regstr = open("./Extractors/src/city_regex",encoding="utf8").read()
+        regstr = open("./src/city_regex",encoding="utf8").read()
         tokenizer = RegexpTokenizer("[А-Яа-я\-]{3,}")
         stemmer = SnowballStemmer('russian')
         
